@@ -2,30 +2,34 @@
 [![lint](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/lint.yml/badge.svg)](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/lint.yml)
 [![format](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/format.yml/badge.svg)](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/format.yml)
 [![test](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/test.yml/badge.svg)](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/test.yml)
-# IDS706-Python-Template
+# IDS706_Fall2023_Mini_Project_8_Rust_Script
 
-Python template repo for Fall 2023 IDS_706-Data Engineering Systems at Duke Univ. 
+IDS706 week 8 mini project: Rewrite a Python script for data processing in Rust, highlighting the improvements in speed and resource usage.
 
 It contains:
 
-- ``.devcontainer`` includes a `Dockerfile` that specifies the configurations of container, and a `devcontainer.json` which is a configuration file used in the context of Visual Studio Code
+- ``main.py`` the original Python script that performs a simple data processing task from a csv file.
 
-- ``workflows`` includes `GitHub Actions`, enables automated build, test and deployment for the project
+- ``src`` includes the Rust project translated from the Python script.
 
-- ``Makefile`` specifies build automation on Linux
 
-- ``requirements.txt`` lists the dependencies, libraries, and specific versions of Python packages required for the project
+## How to test
 
-It also includes ``main.py`` and ``test_main.py`` as sample files to show the functionality of the CI pipeline.
+First run 
+```bash
+make all
+```
+to run the whole install lint format test pipeline for the rust project. Then run
+```bash
+cargo run
+```
+to run the Rust program. It should show the result below:<br>
+![](demo_img/rust_result.png)
+<br>
+Which performs the same data processing task as the Python script in my mini project 2.
 
-## Github Actions Demo
-
-`Github Actions` is configured to kick off workflows with Github events. Below shows some samples:
-
-![img](./demo_img/demo_make_install.png)
-
-![img](./demo_img/demo_make_test.png)
-
-![img](./demo_img/demo_make_format.png)
-
-![img](./demo_img/demo_make_lint.png)
+## Performance comparison
+Use `hyperfine` to measure the performance of the Python script and Rust program, performing the same data processing task.<br>
+![](demo_img/performance_comparison.png)
+<br>
+The result shows that the Rust program has a mean execution time around 100 us, much faster than Python's execution time, which is around 2s.
