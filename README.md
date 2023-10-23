@@ -1,7 +1,7 @@
-[![install](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/install.yml/badge.svg)](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/install.yml)
-[![lint](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/lint.yml/badge.svg)](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/lint.yml)
-[![format](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/format.yml/badge.svg)](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/format.yml)
-[![test](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/test.yml/badge.svg)](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/test.yml)
+[![install](https://github.com/nogibjj/IDS706_Fall2023_Mini_Project_8_Rust_Script/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IDS706_Fall2023_Mini_Project_8_Rust_Script/actions/workflows/install.yml)
+[![lint](https://github.com/nogibjj/IDS706_Fall2023_Mini_Project_8_Rust_Script/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/IDS706_Fall2023_Mini_Project_8_Rust_Script/actions/workflows/lint.yml)
+[![format](https://github.com/nogibjj/IDS706_Fall2023_Mini_Project_8_Rust_Script/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/IDS706_Fall2023_Mini_Project_8_Rust_Script/actions/workflows/format.yml)
+[![test](https://github.com/nogibjj/IDS706_Fall2023_Mini_Project_8_Rust_Script/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/IDS706_Fall2023_Mini_Project_8_Rust_Script/actions/workflows/test.yml)
 # IDS706_Fall2023_Mini_Project_8_Rust_Script
 
 IDS706 week 8 mini project: Rewrite a Python script for data processing in Rust, highlighting the improvements in speed and resource usage.
