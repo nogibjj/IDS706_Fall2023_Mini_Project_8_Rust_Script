@@ -24,7 +24,10 @@ fn main() {
     for row in filtered_data.iter() {
         println!("{:?}", row);
     }
-    let series: Vec<f32> = dataframe.iter().map(|row| row[5].trim_start().parse::<f32>().unwrap_or(0.0)).collect();
+    let series: Vec<f32> = dataframe
+        .iter()
+        .map(|row| row[5].trim_start().parse::<f32>().unwrap_or(0.0))
+        .collect();
     println!("Mean: {}", series.iter().sum::<f32>() / series.len() as f32);
     println!("Median: {}", series[series.len() / 2]);
     let mean = series.iter().sum::<f32>() / series.len() as f32;
