@@ -1,12 +1,19 @@
-"""
-Main code
-"""
+import pandas as pd
+import matplotlib.pyplot as plt
 
 
-def add(a, b):
-    return a + b
+def data_filter(df):
+    return df[df[' "Test3"'] >= 80]
 
 
 if __name__ == "__main__":
-    result = add(2, 4)
-    print(f"The result of adding 2 and 4 is {result}")
+    dataframe = pd.read_csv("./grades.csv")
+    print(data_filter(dataframe))
+    plt.scatter(dataframe["Last name"], dataframe[' "Test3"'])
+    plt.savefig("data_visualization.png")
+
+    # calculate statistics
+    series = dataframe[' "Test3"']
+    print("Mean: ", series.mean())
+    print("Median: ", series.median())
+    print("Standard Deviation: ", series.std())
